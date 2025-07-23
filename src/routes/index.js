@@ -1,4 +1,4 @@
-import { HeaderOnly } from '~/components/Layouts';
+import { HeaderOnly } from '~/layouts';
 import Home from '~/pages/Home';
 import Contact from '~/pages/Contact';
 import Cart from '~/pages/Cart';

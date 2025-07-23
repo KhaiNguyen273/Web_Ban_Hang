@@ -1,0 +1,119 @@
+.wrapper {
+    height: 80px;
+}
+.container {
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: larger;
+}
+.search {
+    position: relative;
+    margin-left: -30px;
+    padding-left: 10px;
+    border: solid 1px rgba(159, 159, 159, 0.832);
+    border-radius: 92px;
+
+    input {
+        border: none;
+        width: 100%;
+        height: 32px;
+        background-color: transparent;
+
+        &:focus {
+            border-color: rgba(22, 24, 35, 0.2);
+            outline: none;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 36px;
+        height: 32px;
+        width: 1px;
+        background-color: rgba(159, 159, 159, 0.832);
+    }
+    // &:focus-within {
+    //     border-color: rgba(22, 24, 35, 0.2);
+    // }
+
+    .search-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 32px;
+        width: 40px;
+        border-top-right-radius: 92px;
+        border-bottom-right-radius: 92px;
+        transition: 0.3s ease;
+        cursor: pointer;
+        color: rgba(64, 64, 64, 0.91);
+
+        &:hover {
+            background-color: rgba(22, 24, 35, 0.2);
+        }
+    }
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+    .menu-icon-user,
+    .menu-icon-bag {
+        cursor: pointer;
+        padding: 14px;
+        font-size: 2.2rem;
+        color: rgba(22, 24, 35, 0.745);
+        transition: 0.2s ease;
+
+        &:hover {
+            color: #101010;
+        }
+
+        span {
+            padding-left: 8px;
+            font-size: 1.5rem;
+        }
+    }
+
+    .menu-icon-bag {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .box-text {
+            padding-left: 0;
+            position: absolute;
+            top: 5px;
+            right: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 2rem;
+            height: 1.8rem;
+            color: #fff;
+            background-color: rgba(22, 24, 35, 0.745);
+            border: solid 1px;
+            border-radius: 92px;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.logo,
+.search,
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32%;
+    height: fit-content;
+}

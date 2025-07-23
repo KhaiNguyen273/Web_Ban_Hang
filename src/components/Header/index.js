@@ -3,7 +3,7 @@ import styles from './Header.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBagShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
-import { Headermenu } from '../HeaderMenu';
+import { Headermenu } from './HeaderMenu';
 const cx = classNames.bind(styles);
 
 const header_menu = ['Home', 'Sale', 'New', 'Men', 'Women'];

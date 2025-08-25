@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title {
+    width: 100%;
+    text-align: center;
+
+    h2 {
+        font-weight: 250;
+    }
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    gap: 20px;
+}

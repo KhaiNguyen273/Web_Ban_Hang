@@ -1,5 +1,22 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1000;
+    transition: transform 0.4s ease;
+}
+
+.hidden {
+    transform: translateY(-200%);
+}
 .wrapper {
     height: 80px;
+    // position: fixed;
+    width: 100%;
+    // z-index: 5;
+    // top: 0;
 }
 .container {
     height: 100%;
@@ -7,6 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 12%);
 }
 .logo {
     font-size: larger;
@@ -89,6 +107,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         .box-text {
             padding-left: 0;
             position: absolute;
@@ -105,6 +124,53 @@
             border-radius: 92px;
             font-size: 1.3rem;
         }
+    }
+}
+
+.dropdown-bag-container {
+    position: absolute;
+    right: -16px;
+    top: 0;
+    transform: translate(-30%, 15%);
+    height: 500px;
+    width: 450px;
+    box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease;
+
+    .dropdown-bag-title {
+    }
+    .dropdown-bag-scroll {
+    }
+    .dropdown-bag-total {
+    }
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.Caretup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: 2.5rem;
+    transform: translate(-1000%, 149%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    svg {
+        filter: drop-shadow(0 -2px 2px rgba(0, 0, 0, 0.12));
     }
 }
 

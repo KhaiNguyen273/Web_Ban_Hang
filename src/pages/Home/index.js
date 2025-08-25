@@ -1,5 +1,7 @@
+import Content from '~/components/Content';
+
 function Home() {
-    return <h2></h2>;
+    return <Content />;
 }
 
 export default Home;

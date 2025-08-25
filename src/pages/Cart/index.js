@@ -1,5 +1,6 @@
+import { CartContent } from '~/components/CartContent';
 function Cart() {
-    return <h2>Cart page</h2>;
+    return <CartContent />;
 }
 
 export default Cart;

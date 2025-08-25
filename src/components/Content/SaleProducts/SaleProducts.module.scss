@@ -1,9 +1,14 @@
-.swiper-wrapper {
-}
+.title {
+    width: 100%;
+    text-align: center;
 
+    h2 {
+        font-weight: 250;
+    }
+}
 .wrapper {
     position: relative;
-    margin-top: 135px;
+    margin-top: 105px;
     cursor: pointer;
     &:hover {
         .btn-prev,
@@ -18,8 +23,8 @@
     opacity: 0;
     border: none;
     border-radius: 92px;
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     cursor: pointer;
     transition: 0.3s ease;
     z-index: 2;
@@ -29,13 +34,28 @@
     }
 }
 .btn-next {
-    top: 50%;
-    right: 1%;
+    top: 45%;
+    right: 0%;
     position: absolute;
 }
 
 .btn-prev {
-    top: 50%;
-    left: 1%;
+    top: 45%;
+    left: 0%;
     position: absolute;
+}
+
+.wrapper {
+    width: 80%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper_slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

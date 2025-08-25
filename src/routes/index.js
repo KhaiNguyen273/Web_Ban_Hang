@@ -3,11 +3,13 @@ import Home from '~/pages/Home';
 import Contact from '~/pages/Contact';
 import Cart from '~/pages/Cart';
 import Flashsale from '~/pages/Flashsale';
+import ProductInfo from '~/pages/ProductInfo';
 const publicRoutes = [
     { path: '/', component: Home },
-    { path: '/contact', component: Contact },
+    { path: '/sale', component: Contact },
     { path: '/cart', component: Cart },
-    { path: '/flashsale', component: Flashsale, layout: HeaderOnly },
+    { path: '/men', component: Flashsale },
+    { path: '/product_info/:id', component: ProductInfo },
 ];
 
 const privateRoutes = [];
